@@ -1,6 +1,8 @@
 <!doctype html>
 
 <head>
+	<title>Search Aggregate</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
@@ -30,15 +32,24 @@
 </head>
 
 <body>
-
-	<form id="searchForm" target="_blank">
-    <!-- TODO: add form elements -->
-	<input type="text" name="q" id="searchBar"/>
-	<label><input type="radio" name="engine" value="google"/>Google</label>
-	<label><input type="radio" name="engine" value="duckduckgo"/>DuckDuckGo</label>
-	<label><input type="radio" name="engine" value="bing"/>Bing</label>
-	<label><input type="radio" name="engine" value="ask"/>Ask</label>
-	<button type="submit" value="Go!" id="submit">Go!</button>
-	</form>
-
+	<div class="title">
+		<h1>What are you looking for?</h1>
+	</div>
+	<div class="container">
+		<form id="searchForm" target="_blank">
+			<!-- TODO: add form elements -->
+			<div class="child child1">
+			<input type="text" name="q" id="searchBar"/>
+			</div>
+			<div class="child child2">
+				<label><input type="radio" name="engine" value="google"/>Google</label>
+				<label><input type="radio" name="engine" value="duckduckgo"/>DuckDuckGo</label>
+				<label><input type="radio" name="engine" value="bing"/>Bing</label>
+				<label><input type="radio" name="engine" value="ask"/>Ask</label>
+			</div>
+			<div class="child button">
+				<button type="submit" value="Go!" id="submit">Go!</button>
+			</div>
+		</form>
+	</div>
 </body>
